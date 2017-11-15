@@ -13,10 +13,6 @@ class EntryDataTransformer implements Transformer
 
     public function transform($entry_data)
     {
-        if(empty($entry_data)) {
-            return [];
-        }
-    
         $first_name = null;
         $last_name  = null;
         $phone      = null;
@@ -43,6 +39,8 @@ class EntryDataTransformer implements Transformer
                 $color      = $entry_data[3];
                 $zip_code   = $entry_data[4];
             }
+        } else {
+            return [];
         }
     
         $output = [
