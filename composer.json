@@ -1,0 +1,14 @@
+{
+  "require-dev": {
+    "phpunit/phpunit": "^6.4"
+  },
+  "autoload": {
+    "classmap": [
+      "app/Tests"
+    ],
+    "psr-4": {
+      "thinkHr\\": "app/thinkHr"
+    }
+  }
+
+}
